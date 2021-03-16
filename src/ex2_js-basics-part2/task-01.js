@@ -1,11 +1,9 @@
 function checkDataType(variable) {
-    if (typeof variable === 'string'){
+    if (typeof variable === 'string') {
         return 'string';
-    } else if (typeof variable === 'number'){
-        if (isNaN(variable)){
-            return undefined;
-        }
-        return 'number';
+    }
+    if (typeof variable === 'number') {
+        return isNaN(variable) ? undefined : 'number';
     }
     return undefined;
 }

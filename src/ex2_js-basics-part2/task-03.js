@@ -1,18 +1,8 @@
-function parityOfArrayNumbers(array){
-   let even = 0;
-    let odd = 0;
-    let zero = 0;
-
-    let notNullArray=array.filter(item=>item!==null)
-    for (let i = 0; i < notNullArray.length; i++){
-        if(notNullArray[i]===0){
-            zero++
-        } else if(notNullArray[i] % 2 === 0){
-            even++
-        } else {
-            odd++
-        }
-    }
+function parityOfArrayNumbers(array) {
+    let numberArray = array.filter(item => typeof item === "number");
+    let zero = numberArray.filter(item => item === 0).length;
+    let even = numberArray.filter(item => (item !== 0) && (item % 2 === 0)).length;
+    let odd = numberArray.filter(item => item % 2 !== 0).length;
 
     return [even, odd, zero]
 }

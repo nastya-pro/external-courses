@@ -2,10 +2,8 @@ let cat = {};
 cat.name = "Barsik";
 cat.age = 8;
 cat.color = "black";
-cat.mew = mew;
+cat.mew = () => {
+    console.log("Meow, meow, meow!");
+};
 
 delete cat.color;
-
-    function mew(){
-    console.log("Meow, meow, meow!")
-}

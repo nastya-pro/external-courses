@@ -1,5 +1,5 @@
-function returnCopyOfObject (object) {
+function returnCopyOfObject(object) {
      return Object.assign({}, object);
 }
 
-module.exports = returnCopyOfObject
+module.exports = returnCopyOfObject;

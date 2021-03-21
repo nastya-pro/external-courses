@@ -1,5 +1,5 @@
 function checkPropertyInObject(string, object) {
-    return object.hasOwnProperty(string)
+    return object.hasOwnProperty(string);
 }
 
-module.exports = checkPropertyInObject
+module.exports = checkPropertyInObject;

@@ -1,27 +1,33 @@
 function Calculator() {
     this.value = 0;
-    this.add = function (num) {
+
+    this.add = (num) => {
         this.value += num || 0;
         return this.add;
-    }.bind(this);
-    this.subtract = function (num) {
+    };
+
+    this.subtract = (num) => {
         this.value -= num || 0;
         return this.subtract;
-    }.bind(this);
-    this.divide = function (num) {
-        if(num && num !== 0) this.value /= num;
+    };
+
+    this.divide = (num) => {
+        if (num) this.value /= num;
         return this.divide;
-    }.bind(this);
-    this.multiply = function (num) {
+    };
+
+    this.multiply = (num) => {
         this.value *= num || 1;
         return this.multiply;
-    }.bind(this);
-    this.getResult = function () {
+    };
+
+    this.getResult = () => {
         return this.value;
-    }.bind(this);
-    this.reset = function () {
+    };
+
+    this.reset = () => {
         this.value = 0;
-    }.bind(this);
+    };
 }
 
 module.exports = new Calculator();

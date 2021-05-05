@@ -1,0 +1,19 @@
+.button{
+    width: 200px;
+    color: #565b5f;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 8px;
+    background: linear-gradient(to top, #989999, #e2e2e2);
+    margin: 8px;
+    padding: 10px;
+    box-shadow: 0 0 0 6px #d6d6d6,
+    0 0 0 9px #f5f5f5,
+    0 0 0 10px #000000;
+}
+
+.button::after, .button::before {
+    content: "\2605";
+    color: #898989;
+    padding: 0 10px;
+}

@@ -1,0 +1,38 @@
+body {
+    padding: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 72% 4% 24%;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+header {
+    background: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+section {
+    background: lightgreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: pink;
+    grid-row-start: 3;
+
+}
+
+header, article, section, .module {
+    padding: 1rem;
+}

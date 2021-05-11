@@ -1,0 +1,7 @@
+.header {
+    text-transform: uppercase;
+}
+
+.fio {
+    text-transform: capitalize;
+}

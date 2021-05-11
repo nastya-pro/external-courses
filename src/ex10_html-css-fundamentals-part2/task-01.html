@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+
+        .circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+        }
+
+        .form {
+            width: 140px;
+            height: 140px;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/dog.jpg" alt="Dog" class="circle">
+    <img src="img/dog.jpg" alt="Dog" class="form">
+</div>
+</body>
+</html>

@@ -37,3 +37,7 @@ aside {
 header, article, section, .module {
     padding: 1rem;
 }
+
+p {
+    font-size: 12px;
+}

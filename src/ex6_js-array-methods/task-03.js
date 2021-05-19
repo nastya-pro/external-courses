@@ -1,11 +1,10 @@
 function everyAnalog(array, callback) {
-    let counter = 0;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length - 1; i++) {
         if (callback(array[i], i, array)) {
-            counter++;
+            return true;
         }
     }
-    return counter === array.length;
+    return false;
 }
 
 module.exports = everyAnalog;

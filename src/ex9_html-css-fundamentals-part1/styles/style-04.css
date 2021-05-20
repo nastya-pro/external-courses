@@ -1,0 +1,50 @@
+div {
+    background-color: #60B88D;
+    height: 300px;
+    width: 400px;
+    position: relative;
+}
+
+.frame1 {
+    margin: 50px;
+    box-shadow: 5px 5px 0 #90CDAF,
+    10px 10px 0 #BFE3D1;
+}
+
+.frame2 {
+    margin: 50px;
+}
+
+.frame2::after, .frame2::before {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+.frame2::after {
+    background-color: #90CDAF;
+    top: 5px; left: 5px;
+}
+.frame2::before {
+    background-color: #BFE3D1;
+    top: 10px; left: 10px;
+}
+
+.frame3 {
+    background-color: #BFE3D1;
+    position: relative;
+    margin: 50px;
+    top: 10px;
+    left: 10px;
+}
+
+.block2 {
+    background-color: #90CDAF;
+    top: -5px;
+    left: -5px;
+}
+.block3 {
+    background-color: #60B88D;
+    top: -5px;
+    left: -5px;
+}

@@ -1,0 +1,43 @@
+body {
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: lightblue;
+}
+
+section {
+    display: flex;
+    background: lightgreen;
+    width: 75%;
+    flex-direction: column;
+}
+
+article {
+    background: white;
+    margin: 0 0 1rem 0;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.module {
+    width: 25%;
+    background: pink;
+}
+
+header, article, section, .module {
+    padding: 1rem;
+}
+
+p {
+    font-size: 12px;
+}

@@ -1,0 +1,23 @@
+@import url("../fonts/aktiv.css");
+
+#table {
+    margin: 50px auto;
+    font-family: Ariel, Aktiv Grotesk, sans-serif;
+    color: #94a1b1;
+}
+
+.line:nth-child(odd) {
+    background-color: #f2f6fa;
+}
+
+.line:nth-child(even) {
+    background-color: #e9eef4;
+}
+
+.line:hover {
+    background-color: #e3e6ea;
+}
+
+.column {
+    padding: 10px;
+}

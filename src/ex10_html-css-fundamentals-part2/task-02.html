@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        #title {
+            height: 140px;
+        }
+    </style>
+</head>
+<body>
+<form method="POST" action="http://httpbin.org/post" name="form">
+    <fieldset>
+        <legend>Personal data</legend>
+        <div>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname">
+        </div>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div>
+            <label for="middleName">Middle Name</label>
+            <input type="text" id="middleName" name="middleName">
+        </div>
+        <div>
+            <label for="gender">You are</label>
+            <label><input type="radio" id="gender" name="gender">male</label>
+            <label><input type="radio" id="gender1" name="gender">female</label>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="18" max="101">
+        </div>
+        <div>
+            <label for="country">Country of Resident
+                <select name="country" id="country">
+                    <option value="null" hidden selected disabled>&#160;</option>
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Germany">Germany</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <label><input type="checkbox" id="city" name="gender">Ryazan</label>
+            <label><input type="checkbox" id="city1" name="gender">Moscow</label>
+        </div>
+        <div>
+            <label for="file">Photography</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <hr>
+        <div>
+            <label for="title">Title
+                <select id="title" multiple>
+                    <optgroup label="Technologies">
+                        <option value="web">Web Master</option>
+                        <option value="database">Database Administrator</option>
+                        <option value="design">Computer-aided design</option>
+                    </optgroup>
+                    <optgroup label="Finance">
+                        <option value="planning">Economic Planning</option>
+                        <option value="accounting">Management accounting</option>
+                        <option value="budgeting">Budgeting and planning</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="range">Salary</label>
+            <input type="range" id="range">
+        </div>
+        <label><textarea cols="50" rows="10" placeholder="Tell about yourself..."></textarea></label>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <div>
+            <label for="site">Site</label>
+            <input type="url" id="site" name="site">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+    </fieldset>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" required id="password" name="password">
+    </div>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сбросить">
+</form>
+</body>
+</html>
